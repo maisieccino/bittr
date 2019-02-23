@@ -1,0 +1,9 @@
+{
+  "name": "bittr-server",
+  "version": "1.0.0",
+  "description": "Bittr",
+  "main": "index.js",
+  "repository": "https://github.com/mbellgb/bittr",
+  "author": "Matt Bell",
+  "license": "MIT"
+}
