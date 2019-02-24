@@ -50,8 +50,9 @@ router.post("/send", async ctx => {
   if (msg !== "1" && msg !== "0") {
     ctx.throw(`Message must be a 0 or 1. Given: ${msg}`, 400);
   }
-  const message = new Message({ from, to, msg, time: Date.now() });
+  const message = new Message({ from, to, message: msg, time: Date.now() });
   global.messages = [...global.messages, message];
+  console.log(global.messages);
   ctx.response.body = { err: "" };
   ctx.status = 201;
 });
