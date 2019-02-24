@@ -3,6 +3,9 @@ const logger = require("koa-logger");
 const bodyParser = require("koa-bodyparser");
 const router = require("./router");
 
+global.users = [];
+global.messages = [];
+
 const app = new Koa();
 app.use(logger());
 app.use(bodyParser());
